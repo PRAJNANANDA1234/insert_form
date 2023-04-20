@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>DISPLAY WEBPAGE</h1>
+        <table border="2px">
+            <tr>
+                <th>TOPIC NAME</th>
+                <th>NAME</th>
+                <th>URL</th>
+                <th>EMAIL</th>
+            </tr>
+            {% for i in WQS %}
+            <tr>
+                <td>{{i.topic_name}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.url}}</td>
+                <td>{{i.email}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
